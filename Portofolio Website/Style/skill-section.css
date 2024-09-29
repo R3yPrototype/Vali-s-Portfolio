@@ -190,7 +190,7 @@ section h1 a{
     }
     .skill-box2{
         width: 250px;
-        margin-right: 90px;
+        margin-right: 70px;
     }
     .skill-table th, .skill-table td {
         padding: 3.5px;
@@ -210,7 +210,7 @@ section h1 a{
         margin-top: 5px;
     }
     .skill-box2 img{
-        width: 40px;
+        width: 35px;
         height: auto;
     }
 }
@@ -223,23 +223,6 @@ section h1 a{
     font-size: 30px;
    }
 }
-@media(max-width:450px){
-    #Skills h2{
-         font-size: 18px;
-     }
-    #Skills h1{
-     font-size: 28px;
-    }
- }
- @media(max-width:420px){
-    #Skills h2{
-         font-size: 15px;
-     }
-     #Skills p{
-        font-size: 14px;
-     }
-    #Skills h1{
-     font-size: 25px;
-    }
- }
+
+ 
  
