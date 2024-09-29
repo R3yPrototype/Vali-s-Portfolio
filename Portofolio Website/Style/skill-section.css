@@ -189,7 +189,8 @@ section h1 a{
         margin: 20px;
     }
     .skill-box2{
-        margin-right: 80px;
+        width: 250px;
+        margin-right: 100px;
     }
     .skill-table th, .skill-table td {
         padding: 4px;
