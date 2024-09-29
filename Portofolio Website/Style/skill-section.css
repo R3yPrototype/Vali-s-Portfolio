@@ -16,12 +16,11 @@
     width: 50%;
 }
 .skill-box2 {
-    align-items: center;
-    width: 200px;
+   margin: auto;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
 }
 
 
