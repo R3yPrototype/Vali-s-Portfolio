@@ -15,16 +15,20 @@
 .skill-background{
     width: 50%;
 }
-.skill-box2{
+.skill-box2 {
     display: flex;
     align-items: center;
     margin: auto;
-  width: 80%;
+    width: 80%;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
 }
-.skill-box2 {
-    display: flex;
-     /* Spațiu între coloane */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    /* Styles for high DPI screens */
+    .skill-box2 img {
+        width: 70px;
+    }
 }
+
 .skill-table {
     width: 100%;
     border-collapse: collapse;
@@ -119,35 +123,35 @@ section h1 a{
         height: auto;
     }
 }
-@media (max-width:550px) {
-    .skill-box1{
+@media (max-width: 550px) {
+    .skill-box1 {
         font-size: 1em;
     }
-    .skill-box1 div{
+    .skill-box1 div {
         margin: 20px;
     }
     .skill-table th, .skill-table td {
         padding: 7px;
     }
-    
-    .skill-table th {
+    .skill-table th, .skill-table td {
         font-size: 1em;
     }
-    
-    .skill-table td {
-        font-size: 1em;
-    }
-    
     .skill-table img {
         width: 40px;  
         height: 40px;
-        margin-top: 5px;
     }
-    .skill-box2 img{
+    .skill-box2 img {
         width: 50px;
         height: auto;
     }
+    #Skills h2 {
+        font-size: 20px;
+    }
+    #Skills h1 {
+        font-size: 30px;
+    }
 }
+
 @media (max-width:450px) {
     .skill-box1{
         font-size: 1em;
