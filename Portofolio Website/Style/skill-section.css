@@ -215,6 +215,7 @@ section h1 a{
     }
 }
 
+
 @media(max-width:550px){
    #Skills h2{
         font-size: 20px;
@@ -223,6 +224,26 @@ section h1 a{
     font-size: 30px;
    }
 }
+@media(max-width:450px){
+    #Skills h2{
+         font-size: 18px;
+     }
+    #Skills h1{
+     font-size: 28px;
+    }
+ }
+ @media(max-width:420px){
+    #Skills h2{
+         font-size: 15px;
+     }
+     #Skills p{
+        font-size: 14px;
+     }
+    #Skills h1{
+     font-size: 25px;
+    }
+ }
+ 
 
  
  
