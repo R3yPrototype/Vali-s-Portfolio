@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vali's Portfolio</title>
+    <link rel="icon" type="image/png" href="img/Logo.png" />
+    <link rel="stylesheet" href="Style/css.css">
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/skill-section.css">
+    <link rel="stylesheet" href="Style/aboutMe-section.css">
+    <link rel="stylesheet" href="Style/contact-section.css">
+    <link rel="stylesheet" href="Style/projects-section.css">
+    <link rel="stylesheet" href="Style/overlay.css">
+    <link rel="stylesheet" href="Style/footer.css">
+</head>
+
+<body>
+    <div id="overlayPage" class="overlayPageStyle">
+        <h1>Hello,
+            <br>
+            I'm Vali
+        </h1>
+
+        <div class="overlayAbout">
+            <p>I'm an apprentice in the software field with a deep passion for technology and IT.
+                On this site, you'll find evidence of my software journey, including open source
+                projects I've developed over the years (both personal and academic), the skills I've
+                acquired, and professional details. I'm open to work and collaborations and I'm eager to
+                learn new things. If you like what you see on my profile, I'd be thrilled to discuss
+                further!
+            </p>
+        </div>
+
+        <div class="overlayParagraph">
+
+            <p>
+                Learn more about what I do and get in contact with me.
+            </p>
+
+            <button class="line-overlay" id="overlayButton"></button>
+
+        </div>
+        <footer>
+
+            <div class="line-footer"></div>
+            <p>© 2024 All rights reserved.</p>
+
+        </footer>
+
+    </div>
+    <div id="mainPage">
+        <div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=closeSidebar()>
+                        <a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a>
+                    </li>
+                    <li onclick=closeSidebar()><a href="#AboutMe">About</a> </li>
+                    <li onclick=closeSidebar()><a href="#Projects">Projects</a> </li>
+                    <li onclick=closeSidebar()><a href="#Skills">Skills</a> </li>
+                    <li onclick=closeSidebar()><a href="#Contact">Contact</a> </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Vali
+                        </a>
+                    </li>
+                    <li class="hideOnMobile"><a href="#AboutMe">About</a> </li>
+                    <li class="hideOnMobile"><a href="#Projects">Projects</a> </li>
+                    <li class="hideOnMobile"><a href="#Skills">Skills</a> </li>
+                    <li class="hideOnMobile"><a href="#Contact">Contact</a> </li>
+                    <li class="menuButton" onclick=showSidebar()> <a><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section id="AboutMe">
+                <div class="container">
+
+                    <div class="AboutMe">
+                        <img src="img/MePic.jpg" alt="image">
+                        <h1>About Me</h1>
+                        <p>
+                            I am a third-year Computer Science student with a passion for software development,
+                            continuously seeking to expand my knowledge through research and personal projects.
+                            Over the past three years, I've gained experience across various programming domains,
+                            with a particular focus on web development, which I've dedicated the most time to and
+                            feel most comfortable with.
+                        </p>
+
+                        <p>
+                            Before enrolling in university, I completed an accredited course in Front-End Development,
+                            which played a significant role in sparking my interest in the field. It helped me grasp
+                            the basics and gave me a new perspective on the software development industry. After the
+                            course, I continued learning new skills on my own, which became much easier as my foundation
+                            grew stronger.
+                        </p>
+
+                        <p>
+                            During university, I've expanded my knowledge further, gaining a solid understanding of .NET
+                            and C#. This was a refreshing experience, especially after working with C++ in
+                            high school and the first year of my degree. I also enjoyed learning Java, which felt quite
+                            similar to C#, and through both languages, I developed a strong grasp of Object-Oriented
+                            Programming (OOP). I even explored GUI development using XAML in C# and JavaFX in Java.
+                        </p>
+
+                        <p>
+                            In addition to these skills, I have also learned Python and created APIs using Flask.
+                            I have become proficient in working with relational databases through MySQL Workbench.
+                            This diverse set of experiences has given me a solid foundation in software development,
+                            and I am eager to continue applying and expanding these skills through both academic and
+                            personal
+                            projects.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="Projects">
+                <h1>My Projects</h1>
+                <div class="projects-container">
+                    <div class="projects-box">
+                        <div><a href="https://game-rev.netlify.app/">
+                                <img src="img/gameRev.png" alt=""></a>
+                            <p>GameRev -A web page about games featuring reviews and specifications.</p>
+
+
+                        </div>
+                        <div><a href="https://github.com/R3yPrototype/Graduated-Students"><img
+                                    src="img/graduatedStudents.png"></a>
+                            <p>Graduated Students - An application that generates a list of students and saves the graduates
+                                 in a text file.</p>
+
+                        </div>
+                        <div><a href="https://github.com/R3yPrototype/MyTasks"><img src="img/todolist.png"></a>
+                            <p>MyList - An unhosted to-do list app with sign-up, login, and database features.</p>
+
+                        </div>
+                       
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="Skills">
+                <h1>Skills <a href="Resume/Radu-Nicolae-Valentin Resume.pdf" download="Radu-Nicolae-Valentin">Download
+                        resume</a></h1>
+
+                <div class="skill-container">
+                    <div class="skill-box1">
+                        <div class='skill-background'>
+                            <h2>Background</h2>
+                            <p>3rd year Computer Science student.| Experience
+                                in web development projects.| Solid foundation in aglorithms and data structures.|</p>
+                        </div>
+                        <div>
+                            <h2>Education</h2>
+                            <ul>
+                                <li>Romanian American University</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Certifications</h2>
+                            <ul>
+                                <li>
+                                    Front-End Developer
+                                </li>
+                            </ul>
+                            <dl>
+                                <dt>-Accredited by Atelierele ILBAH-</dt>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="skill-box2">
+                        <table class="skill-table">
+                            <thead>
+                                <tr>
+                                    <th>Programming Languages</th>
+                                    <th>Web Technologies</th>
+                                    <th>Frameworks/Libraries</th>
+                                    <th>Databases</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <li>C#</li>
+                                        <img src="img/c-sharp.png" alt="">
+                                    </td>
+                                    <td>
+                                        <li>HTML</li>
+                                        <img src="img/html.png" alt="">
+                                    </td>
+                                    <td>
+                                        <li>Bootstrap</li>
+                                        <img src="img/bootstrap.png" alt="">
+                                    </td>
+                                    <td>
+                                        <li>MySQL</li>
+                                        <img src="img/mysql.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li>Java</li>
+                                        <img src="img/java.png" alt="">
+                                    </td>
+                                    <td>
+                                        <li>CSS</li>
+                                        <img src="img/css.png" alt="">
+                                    </td>
+                                    <td>
+                                        <li>Flask</li>
+                                        <img src="img/flask.png" alt="">
+                                    </td>
+                                    <td></td> <!-- Nu mai este altă bază de date de adăugat -->
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li>Python</li>
+                                        <img src="img/python.png" alt="">
+                                    </td>
+                                    <td>
+                                        <li>JavaScript</li>
+                                        <img src="img/java-script.png" alt="">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li>JavaScript</li>
+                                        <img src="img/java-script.png" alt="">
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="Contact">
+                <div class="container3">
+                    <h1>Contact Me Here</h1>
+                    <div>
+                        <p>raduv4lentin@gmail.com</p>
+                    </div>
+
+                    <div class="contact-box">
+                        <div><a href="https://github.com/R3yPrototype">
+                                <img src="img/github.png" alt="">
+                            </a>
+                        </div>
+                        <div><a href="https://www.linkedin.com/in/radu-nicolae-valentin-bb776b241/">
+                                <img src="img/linkedin.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+            <div class="line-footer"></div>
+            <p>© 2024 All rights reserved | Radu Valentin.</p>
+
+        </footer>
+    </div>
+
+    <script src="sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+#AboutMe img{
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin:20px;
+}
+.AboutMe{
+    width: 70%;
+    margin: 50px;
+    float: left;
+}
+.AboutMe h1{
+    padding-top: 60px;
+    margin-left: 40px;
+}
+
+.AboutMe p{
+    padding-top: 10px;
+}
+
+/*Projects style page below*/
+.projects-container{
+    display:flex;
+    justify-content: center;
+}
+@media (max-width:740px) {
+    #AboutMe img{
+        float: left;
+        width: 250px;
+        height: 350px;
+        
+    }
+}

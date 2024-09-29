@@ -1,0 +1,100 @@
+
+
+.line-overlay{
+    width: 100px;
+    height: 7px; 
+    margin-top:10px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease, height 0.3s ease;
+    
+}
+
+.line-overlay:hover{
+    transform: translateY(+1.5px); 
+}
+
+#overlayPage {
+    display: block; 
+    position: absolute;
+    text-align: center;
+    min-height: 100vh; 
+    background-image: linear-gradient(to bottom right, rgb(173, 174, 175), rgb(102, 145, 202));
+}
+
+#mainPage {
+    display: none; 
+    animation: appear 1s;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+#overlayPage h1{
+    margin:50px;
+    text-align: left;
+    font-size: 70px;
+    padding-top: 40px;
+    padding-left: 200px;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(40, end) infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@media (max-width:740px) {
+    #overlayPage h1{
+       
+        padding-left: 120px;
+    }
+}
+@media (max-width:740px) {
+    #overlayPage h1{
+     
+        padding-left: 60px;
+    }
+}
+@media (max-width:500px) {
+    #overlayPage h1{
+        font-size: 55px;
+        padding-left: 40px;
+    }
+}
+
+.overlayAbout{
+    margin:50px;
+    padding-top: 35px;
+    text-align:left;
+    margin-left:200px;
+    margin-right:200px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+@media (max-width:1200px){
+    .overlayAbout{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+@media (max-width:700px){
+    .overlayAbout{
+        font-size: 17.5px;
+        height: 400px;
+        width: auto;
+    }
+    
+}
+.overlayParagraph{
+    padding-top: 30px;
+}

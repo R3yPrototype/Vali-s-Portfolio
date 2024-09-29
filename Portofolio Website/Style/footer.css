@@ -1,0 +1,15 @@
+
+footer{
+    width: 100%;
+    border-top: 2px;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'bold';
+}
+
+.line-footer{
+    height: 1px;
+    background: black;
+    
+}
