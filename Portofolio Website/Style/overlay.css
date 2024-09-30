@@ -1,16 +1,35 @@
-
-
-.line-overlay{
+.line-overlay {
+    background-color: #215f9e;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
     width: 100px;
-    height: 7px; 
-    margin-top:10px;
+    height: 30px;
+    margin-top: 10px;
     margin-bottom: 50px;
-    transition: transform 0.3s ease, height 0.3s ease;
-    
+   
+
 }
 
-.line-overlay:hover{
-    transform: translateY(+1.5px); 
+.line-overlay .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+
+.line-overlay:hover {
+    transform: translateY(+1.5px);
+    background-color: transparent;
+    outline: 3px #181717 solid;
+}
+
+.line-overlay:hover .text {
+    color: #181717;
+
 }
 
 #overlayPage {
