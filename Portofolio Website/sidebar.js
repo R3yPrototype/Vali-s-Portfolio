@@ -1,11 +1,17 @@
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex'; // Show sidebar when clicked/tapped
+    const body = document.querySelector('body');
+
+    sidebar.style.display = 'flex';  // Show the sidebar
+    body.classList.add('no-scroll'); // Prevent scrolling
 }
 
 function closeSidebar() {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none'; // Hide sidebar when clicked/tapped
+    const body = document.querySelector('body');
+
+    sidebar.style.display = 'none';  // Hide the sidebar
+    body.classList.remove('no-scroll'); // Allow scrolling again
 }
 
 // Add event listeners for clicks only (which works on both touch and click devices)
