@@ -71,6 +71,14 @@
     from { width: 0; }
     to { width: 100%; }
 }
+@media (max-width: 1920px) {
+    #overlayPage h1 {
+        padding-top: 200px;
+    }
+    .overlayAbout {
+        padding-top: 200px;
+    }
+}
 
 @media (max-width:740px) {
     #overlayPage h1{
