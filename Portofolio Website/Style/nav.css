@@ -1,6 +1,6 @@
 
-nav{
-    position: fixed; /* Sau 'sticky' dacă preferi */
+nav {
+    position: fixed; /* Or 'sticky' if you prefer */
     top: 0;
     left: 0;
     right: 0;
@@ -10,6 +10,7 @@ nav{
     backdrop-filter: blur(10px);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -19,9 +20,10 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
 }
+
 nav li {
     margin: 0;
-    height: 50px;   
+    height: 50px;
     align-items: center;
 }
 
@@ -33,59 +35,72 @@ nav a {
     align-items: center;
     color: black;
 }
-nav li:first-child{
-    margin-right:auto ;
+
+nav li:first-child {
+    margin-right: auto;
 }
+
 nav a:hover {
     background-color: #f0f0f0;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
-    z-index:999;
+    z-index: 999;
     background-color: rgba(131, 129, 129, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display:none;
-    flex-direction:column;
-    align-items: flex-start;
+    display: none; /* Sidebar hidden by default */
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
- svg {
+.sidebar svg {
     fill: black;
 }
-.sidebar li{
+
+.sidebar li {
     width: 100%;
     padding: 0;
 }
-.sidebar a{
+
+.sidebar a {
     width: 100%;
     align-items: center;
 }
-.menuButton{
+
+.menuButton {
     display: none;
+    cursor: pointer; /* Added for better UX */
 }
-@media(max-width:800px){
-    .menuButton{
+
+/* Make sidebar toggle visible on smaller screens */
+@media (max-width: 800px) {
+    .menuButton {
         display: flex;
     }
 }
-@media(max-width:800px){
-    .hideOnMobile{
+
+@media (max-width: 800px) {
+    .hideOnMobile {
         display: none;
     }
 }
-@media(max-width:420px){
-    .sidebar{
+
+/* Adjust sidebar width on very small screens */
+@media (max-width: 420px) {
+    .sidebar {
         width: 100%;
     }
 }
+
+
+
 
 
 
