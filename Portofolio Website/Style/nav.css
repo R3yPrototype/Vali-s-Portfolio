@@ -43,7 +43,7 @@ nav li:first-child {
 nav a:hover {
     background-color: #f0f0f0;
 }
-
+/* Sidebar styling */
 .sidebar {
     position: fixed;
     top: 0;
@@ -51,19 +51,29 @@ nav a:hover {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(131, 129, 129, 0.1);
-    backdrop-filter: blur(10px);
+    background-color: rgba(131, 129, 129, 0.8); /* Increased transparency */
+    backdrop-filter: blur(10px); /* Ensure this works well on mobile */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Sidebar hidden by default */
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow-y: auto; /* Add scrolling to sidebar content itself */
 }
 
-.sidebar svg {
-    fill: black;
+/* To make it more transparent specifically for mobile devices */
+@media (max-width: 800px) {
+    .sidebar {
+        background-color: rgba(131, 129, 129, 0.7); /* Slightly more transparent on mobile */
+    }
 }
 
+/* Prevent body scrolling when sidebar is open */
+body.no-scroll {
+    overflow: hidden; /* Prevent scrolling on body */
+}
+
+/* Sidebar list styling */
 .sidebar li {
     width: 100%;
     padding: 0;
@@ -76,10 +86,9 @@ nav a:hover {
 
 .menuButton {
     display: none;
-    cursor: pointer; /* Added for better UX */
+    cursor: pointer;
 }
 
-/* Make sidebar toggle visible on smaller screens */
 @media (max-width: 800px) {
     .menuButton {
         display: flex;
@@ -92,15 +101,12 @@ nav a:hover {
     }
 }
 
-/* Adjust sidebar width on very small screens */
+/* Sidebar full width on very small devices */
 @media (max-width: 420px) {
     .sidebar {
         width: 100%;
     }
 }
-
-
-
 
 
 
